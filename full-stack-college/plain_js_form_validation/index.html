@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince | Form Validation</title>
+</head>
+
+<style>
+    div {
+        /* so that each is visible in a line  */
+        display: block;
+        margin-bottom: 12px;
+    }
+</style>
+
+<body>
+    <form name="myform" onsubmit="return validate()">
+        <div>
+            <input type="text" name="name" id="name" placeholder="Enter Name">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <!-- using html5 validation  -->
+        <div>
+            <input type="password" name="pass" id="pass" maxlength="15" minlength="6" placeholder="Enter Password">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="gender" value="Male"> Male
+        </div>
+        <div>
+            <input type="radio" name="gender" id="gender" value="Female"> Female
+        </div>
+        <div>
+            <input type="submit" value="Validate">
+        </div>
+    </form>
+    <script src="./validate.js"></script>
+</body>
+
+</html>
